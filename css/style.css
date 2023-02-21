@@ -98,7 +98,6 @@ input:focus {
 /****champ de formulaire****/
 #search {
     background: #ffffff;
-    order: 1px solid #f2f2f2;
     margin: -5px;
     border: 1px solid #f2f2f2;
 
@@ -118,32 +117,33 @@ input:focus {
 }
 
 /********barre de navigation*********/
+nav {
+    display: flex;
+    margin-top: 30px;
+}
+
 .liste_filtres {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 914px;
-    margin-top: 38px;
-    margin-bottom: 38px;
+    width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-i {
-    padding-right: 8px;
+.titre_filtres {
+    display: inline-block;
+    margin-right: 50px;
 }
 
 /********liste des filtres***********/
 
-ul {
-    padding-left: 0px;
-
-}
-
 .filtres {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 18px;
     border-radius: 25px;
     border: 2px solid #D9D9D9;
-    padding: 10px;
+    padding: 20px;
 }
 
 .filtres:hover {
@@ -158,13 +158,6 @@ ul {
     padding-right: 10px;
     padding-left: 5px;
     color: #0065FC;
-}
-
-span {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 40px;
-
 }
 
 /**********icon "i"section Nav*******/
@@ -187,8 +180,8 @@ main {
     gap: 40px;
 }
 
-.activites {
-    grid-column: 1/3;
+ul {
+    padding-left: 0px;
 }
 
 /********************************************/
@@ -234,7 +227,7 @@ main {
     height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
-
+    border: 5px solid white
 }
 
 /***************pied de page card hebergement********************/
@@ -293,7 +286,7 @@ i {
 /**********contenu card "les plus populaires"************/
 .contenu_populaire {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 343px;
     height: 144px;
     border-radius: 20px;
@@ -321,6 +314,7 @@ i {
 
 /*******derniere section container "activite a mMarseille"*/
 .activites {
+    grid-column: 1/4;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -421,8 +415,7 @@ footer {
     }
 
     .contenu {
-        width: 30%;
-
+        width: 40%;
     }
 
     .populaires {
@@ -443,10 +436,24 @@ footer {
 
     .card_activites {
         margin-bottom: 25px;
+        width: auto;
+    }
+
+    .activites {
+        display: block;
 
     }
 
     footer {
-        width: 50%;
+        width: 40%;
+    }
+
+    .titre {
+        margin-right: 0px;
+    }
+
+    .contenant_liste_footer {
+        margin-right: 10px;
+        font-size: 14px;
     }
 }
