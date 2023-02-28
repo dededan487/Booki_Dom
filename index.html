@@ -13,25 +13,32 @@
     <div id="bloc_page">
         <header>
             <div class="container_entete">
-                <img src="Images/logo/Booki.png" alt="logo booki" class="logo">
-                <div class="ancres">
-                    <a href="#hebergement" class="heberg_ancre">Hébergements</a>
-                    <a href="#activite" class="activ_ancre">Activités</a>
-                </div>
+                <img src="Images/logo/Booki@3x.png" alt="logo booki" class="logo">
+                <nav class="ancres">
+                    <ul>
+                        <li><a href="#hebergement" class="heberg_ancre">Hébergements</a></li>
+                        <li><a href="#activite" class="activ_ancre">Activités</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="conseil">
-                <h1 class="titre_header">Trouvez votre hébergement pour des vacances de rêve à Marseille</h1>
-                <h3>En plein centre-ville ou en pleine nature</h3>
+                <h1 class="titre_header">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h2>En plein centre-ville ou en pleine nature</h2>
             </div>
             <div class="recherche">
                 <form>
                     <label for="search"></label><i class="fa-solid fa-location-dot"></i>
                     <input type="search" name="search" id="search" placeholder="Marseille, France">
-                    <input type="submit" class="bouton" value="Rechercher">
-                </form>
+                    <button type="submit" class="bouton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>Rechercher</span>
+                    </button>
+
+
+
             </div>
         </header>
-        <nav>
+        <nav class="filtres_nav">
             <h3 class="titre_filtres">Filtres</h3>
             <ul class="liste_filtres">
                 <li class="filtres"><i class="fa-solid fa-money-bill-wave"></i>Économique</li>
